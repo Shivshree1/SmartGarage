@@ -1,0 +1,11 @@
+public class Addition {
+
+	public static void main(String args[]) 
+	{
+		int a= 150;
+		int b= 200;
+        System.out.print(a+b);
+
+	}
+
+}

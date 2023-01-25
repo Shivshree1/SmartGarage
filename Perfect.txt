@@ -1,0 +1,19 @@
+public class Perfect 
+{
+public static void main(String args[]) 
+{
+	int num= 6;
+	int n=num;
+	int sum= 0;
+	for(int i=1;i<=num/2;i++) 
+	{
+		if(num%i==0) {
+			sum= sum+i; 			}
+	}
+	if(sum==n) {
+		System.out.print(" It's a Perfect number");
+	}else {
+		System.out.print("No! It's not a Perfect number");
+	}
+}
+}

@@ -1,0 +1,93 @@
+public class AxisBank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);		
+		String choice;
+		do {
+			System.out.println("Hi");
+			System.out.println("*******************Welcome to Axis Bank********************");
+			System.out.println("Just enter the corresponding option number for desired banking services");
+			System.out.println("1.Account Balance");
+			System.out.println("2.Account Mini Statement");
+			System.out.println("3.Credit Card Services");
+			System.out.println("4.FD/RD Services");
+			System.out.println("5.Block Credit/Debit Card");
+			System.out.println("6.Exit to Main Menu");
+			
+			int optionno = sc.nextInt();
+			switch(optionno) {
+			case 1:
+				System.out.println("Fetching your Account Balance...........");
+				System.out.println("Your A/c no. xxxxxxxx3211 has a clear balance of INR 5000.17");
+				break;
+				
+			case 2:
+				System.out.println("Fetching your Account Mini Statement...........");
+				System.out.println("Last few trasactions in your acc. no. xxxxxxxx3211");
+				System.out.println("Transaction No.1" + "Debited");
+				System.out.println("Transaction No.1" + "Credited");
+				break;
+				
+			case 3:
+				System.out.println("1.Apply Now");
+				System.out.println("2.CC Outstanding Amount");
+				System.out.println("3.Available Credit Limit");
+				System.out.println("4.CC Bill Amount");
+				int ch= sc.nextInt();
+				switch(ch) {
+				case 1:
+					System.out.println("Applied successfully....");
+					break;
+				case 2:
+					System.out.println("Your CC Outstanding amount is INR 2599.00");
+					break;
+				case 3:
+					System.out.println("Avilable limit is INR 695");
+					break;
+				case 4:
+					System.out.println("Bill amount is INR 1904");
+					break;
+				}
+				break;
+			
+			case 4:
+				System.out.println("1.FD/RD Summary");
+				System.out.println("2.Open FD");
+				int ch1=sc.nextInt();
+				switch(ch1) {
+				case 1:
+					System.out.println("Fetching........");
+					System.out.println("Transaction No.1" + "Credited");
+					break;
+				case 2:
+					System.out.println("Fill the required details.......");
+					System.out.println("FD is opened sucessfully");
+					break;
+				}
+				break;
+				
+			case 5:
+				System.out.println("1.Block Credit card");
+				System.out.println("2.Blaock Debit Card");
+				int ch2=sc.nextInt();
+				switch(ch2) {
+				case 1:
+					System.out.println("Credit card is blocked");
+					break;
+				case 2:
+					System.out.println("Debit card is blocked");
+				}
+				break;
+								
+			case 6:
+				System.out.println("Exit to Main Menu");
+				break;
+			}
+			System.out.println("Do you want to exit?(Yes/No)");
+			choice = sc.next();}
+			while(choice.equalsIgnoreCase("Yes"));
+			System.out.println("*************Thank you for using axis services************");
+		}
+	}
+
